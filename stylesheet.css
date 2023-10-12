@@ -36,11 +36,16 @@ footer {
     padding: 10px;
 }
 
+.card-container {
+    display: flex; /* Use flexbox to arrange cards horizontally */
+    justify-content: space-between; /* Add space between the cards */
+}
+
 .card {
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px;
+    width: calc(50% - 10px); /* Each card takes 50% width with 10px spacing */
+    margin: 10px; /* Add margin for spacing between cards */
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
